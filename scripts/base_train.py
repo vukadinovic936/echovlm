@@ -50,7 +50,7 @@ unembedding_lr = 0.004 # learning rate for the unembedding parameters (Adam
 matrix_lr = 0.02 # learning rate for the matrix parameters (Muon)
 weight_decay = 0.0 # weight decay for the embedding/unembedding parameters (Adam)
 grad_clip = 1.0
-device_batch_size = 128
+device_batch_size = 256
 total_batch_size = avg_tokens_per_report * device_batch_size * ddp_world_size # how many tokens in total are processed per batch (approximately because tokens vary per sequence)
 # ReduceLROnPlateau settings
 lr_reduce_factor = 0.5 # factor to reduce LR by

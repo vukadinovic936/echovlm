@@ -1,16 +1,16 @@
 
 from torch.utils.data import DataLoader
-from echollm import dataset
-from echollm import tokenizer
+from echovlm import dataset
+from echovlm import tokenizer
 import pandas as pd
 import torch
-from echollm.gpt import GPTConfig,GPT
-from echollm.common import compute_init,autodetect_device_type,print0,compute_cleanup,get_latest_checkpoint
-from echollm.loss_eval import evaluate_bpb
+from echovlm.gpt import GPTConfig,GPT
+from echovlm.common import compute_init,autodetect_device_type,print0,compute_cleanup,get_latest_checkpoint
+from echovlm.loss_eval import evaluate_bpb
 from contextlib import nullcontext
 import os
 import time
-from echollm.engine import Engine
+from echovlm.engine import Engine
 import numpy as np
 import glob
 from contextlib import contextmanager

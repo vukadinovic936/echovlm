@@ -15,7 +15,7 @@ import signal
 import warnings
 from contextlib import contextmanager
 from collections import deque
-from echollm.common import compute_init
+from echovlm.common import compute_init
 
 # -----------------------------------------------------------------------------
 # Calculator tool helpers

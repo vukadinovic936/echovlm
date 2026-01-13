@@ -9,9 +9,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from echollm.common import get_dist_info
-from echollm.muon import Muon, DistMuon
-from echollm.adamw import DistAdamW
+from echovlm.common import get_dist_info
+from echovlm.muon import Muon, DistMuon
+from echovlm.adamw import DistAdamW
 
 @dataclass
 class GPTConfig:
