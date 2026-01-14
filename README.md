@@ -57,9 +57,8 @@ echovlm can serve as both a starting point to train vlms on your own data and a 
 # Using echovlm for your research
 If you are considering to use echovlm for your own research here are the advantages of using it versus general vlm training libraries:
 1) Medical reports have much smaller vocabulary size than natural language, you'd benefit from training a custom tokenizer as shown here.
-2) We significantly reduce training time and hardware requirements by using a previously developed encoder for echocardiography, and during vlm training vlm sees only the embeddings , given that there are so many publicly available encoders for almost all medical imaging modalities ([MRI](https://www.nature.com/articles/s41551-024-01283-7), [ECG](https://ai.nejm.org/doi/full/10.1056/AIoa2401033), [X-ray](https://www.nature.com/articles/s41586-025-09079-8) etc ...) this is a trick y'all should use.
-3) You'd have to find the optimal hyperparameters for your dataset such as the vocabulary size, maximum sequence length and number of transformer layers.
-Things to consider when doing it on your own data:
+2) We significantly reduce training time and hardware requirements by using a previously developed encoder for echocardiography, so during vlm training, vlm sees only the embeddings. Given that there are so many publicly available encoders for almost all medical imaging modalities ([MRI](https://www.nature.com/articles/s41551-024-01283-7), [ECG](https://ai.nejm.org/doi/full/10.1056/AIoa2401033), [X-ray](https://www.nature.com/articles/s41586-025-09079-8) etc ...) this is a useful trick.
+3) Consider that when using this code on your own data you'd have to find the optimal hyperparameters for your dataset such as the vocabulary size, maximum sequence length and number of transformer layers.
 
 # Cite
 ```bibtex
