@@ -1,5 +1,7 @@
 # echovlm: Medical Imaging Report Generation for X$
 
+![echovlm demo](https://github.com/vukadinovic936/echovlm/blob/main/demo.gif)
+
 This repo is a full-stack implementation of a VLM for medical report generation from imaging scans. It is designed to serve as a practical example for researchers, demonstrating end-to-end training of VLMs on medical imaging data, and can be adapted to various imaging modalities.
 echovlm is inspired by Karpathy's [nanochat](https://github.com/karpathy/nanochat), and is also a fully open source, reproducible codebase which makes it one of the few public codebases for medical machine learning. As a running example, we use an echocardiography dataset with synthethic reports and study embeddings, which allows us to simulate VLM training data despite not having access to raw medical imaging scans. echovlm is very light and it can run on a single gpu via speedrun.sh script, that runs the entire pipeline start to end. This includes dataset preparation, tokenization, training, evaluation, inference and real example on the scan of my heart.
 
