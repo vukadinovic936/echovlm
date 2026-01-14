@@ -62,6 +62,7 @@ If you are considering to use echovlm for your own research here are the advanta
 Things to consider when doing it on your own data:
 
 # Cite
+```
 @misc{echovlm,
   author = {Milos Vukadinovic},
   title = {echovlm: Medical Imaging Report Generation for X%},
@@ -69,4 +70,7 @@ Things to consider when doing it on your own data:
   publisher = {GitHub},
   url = {https://github.com/vukadinovic936/echovlm}
 }
+```
 
+# License 
+MIT
