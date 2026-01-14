@@ -5,18 +5,18 @@ echovlm is inspired by Karpathy's [nanochat](https://github.com/karpathy/nanocha
 
 
 # Quick Start
-```
+```bash
 bash speedrun.sh
 ```
 
 Since the training takes some time, I run it in the background with [tmux](https://tmuxcheatsheet.com/how-to-install-tmux/)
-```
+```bash
 tmux new-session -d -s speedrun 'bash speedrun.sh'
 ```
 
 # Evaluation 
 In medical report generation, diagnostic accuracy is the metric we care about the most. We'll see how well can how well can echovlm assess common cardiac traits from study embeddings. Note that these study embeddings are not actually encoded videos, and are not directly comparable to SOTA echocardiography modes, but will work for the purposes of demonstration. You can run 
-```
+```bash
 python -m scripts.test_inference
 ```
 The output will include individual scores (AUROC for binary, r2 for regression) and a **Core Metric**, which represents the average across all evaluated traits.
@@ -62,7 +62,7 @@ If you are considering to use echovlm for your own research here are the advanta
 Things to consider when doing it on your own data:
 
 # Cite
-```
+```bibtex
 @misc{echovlm,
   author = {Milos Vukadinovic},
   title = {echovlm: Medical Imaging Report Generation for X%},
