@@ -68,7 +68,7 @@ If you are considering to use echovlm for your own research here are the advanta
 ```bibtex
 @misc{echovlm,
   author = {Milos Vukadinovic},
-  title = {echovlm: Medical Imaging Report Generation for X%},
+  title = {echovlm: Medical Imaging Report Generation Model for $5},
   year = {2026},
   publisher = {GitHub},
   url = {https://github.com/vukadinovic936/echovlm}
