@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')  # Use non-interactive backend (no X11 required)
 import matplotlib.pyplot as plt
 import os
 
