@@ -1,4 +1,5 @@
-# echovlm: Medical Imaging Report Generation for X$
+# echovlm
+> Medical Imaging Report Generation Model for $5
 
 ![echovlm demo](https://github.com/vukadinovic936/echovlm/blob/main/demo.gif)
 
@@ -10,12 +11,12 @@ echovlm is inspired by Karpathy's [nanochat](https://github.com/karpathy/nanocha
 ```bash
 bash speedrun.sh
 ```
-
 Since the training takes some time, I run it in the background with [tmux](https://tmuxcheatsheet.com/how-to-install-tmux/)
 ```bash
 tmux new-session -d -s speedrun 'bash speedrun.sh'
 ```
-
+You can subsequently attach tmux with `tmux attach-session` and then detach with 'Ctrl+b :detach'
+This bash script will run the whole pipeline end-to-end, if you want a more detauled walkthrough of around the speedrun script see ("echovlm: Medical Imaging Report Generation Model for $5")[https://github.com/vukadinovic936/echovlm/discussions/1]
 # Evaluation 
 In medical report generation, diagnostic accuracy is the metric we care about the most. We'll see how well can how well can echovlm assess common cardiac traits from study embeddings. Note that these study embeddings are not actually encoded videos, and are not directly comparable to SOTA echocardiography modes, but will work for the purposes of demonstration. You can run 
 ```bash
